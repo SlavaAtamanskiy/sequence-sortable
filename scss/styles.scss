@@ -1,0 +1,41 @@
+//-----------Import-----------------
+@import "mixings";
+@import "variables";
+
+//-----------Global styles-------------
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding:0;
+}
+
+#main {
+  height: 25rem;
+}
+
+
+//-----------Container styles-------------
+.homework-container-sequence {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: inherit;
+  .homework-sequence-list {
+      display: flex;
+      flex-flow: row wrap;
+      list-style-type: none;
+      .homework-sequence-list-item {
+           background-color: #85ebf7;
+           box-shadow: 0px 1px #579da5;
+           border-radius: 3px;
+           padding: 10px;
+           margin: 5px;
+           text-align: center;
+           font-weight: bold;
+   }
+  }
+}
